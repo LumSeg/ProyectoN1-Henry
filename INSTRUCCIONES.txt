@@ -1,0 +1,181 @@
+PROYECTO N1
+
+
+HOMEWORK 1
+
+Habilidades y competencias que desarrollaré...
+
+* Manejo de repositorios con Git y Github.
+
+* Preparación del entorno de trabajo.
+
+* Diseño de Página Web con HTML y CSS.
+
+--------------------------------------------------
+
+ACTIVIDAD 01
+
+1. Preparación del proyecto en entorno local...
+
+2. Aceptar la invitación recibida al repositorio template del Proyecto Integrador de M1.
+
+3. Clonar el repositorio en una carpeta a elección.
+
+4. Instalar las dependencias.
+
+5. Recorrer los archivos que están dentro de la carpeta del proyecto y familiarizarse con la estructura.
+
+--------------------------------------------------
+
+
+ACTIVIDAD 02
+
+Diseño de página web de presentación personal...
+
+1. Generar el archivo “reset.css” en la carpeta correspondiente.
+
+2. Vincular ambos archivos CSS con el documento index.html.
+
+3. Diseñar una página web de presentación personal que contendrá 3 secciones:
+	A) Sección “Sobre Mi”, con un breve párrafo de 			presentación.
+	B) Sección “Mis Tecnologías Favoritas” que 			enumera mediante el formato deseado las 			tecnologías favoritas. Se sugiere utilizar 			tarjetas con logos.
+	C) Sección “Mis Actividades Favoritas”, la cual 		contendrá:
+		* Un serie de Inputs para que el usuario 		pueda ingresar TÍTULO, DESCRIPCIÓN y URL 		DE IMAGEN. 
+		* Un contenedor que luego mostrará las 				tarjetas con las actividades creadas.
+
+--------------------------------------------------------
+
+ACTIVIDAD 03
+
+- Puedes agregar al diseño cualquier tipo de elementos, estilos, imágenes, que se desees.
+
+- Pushear los cambios hechos sobre el proyecto al repositorio remoto.
+
+********************************************************
+
+HOMEWORK 2
+
+Habilidades y competencias que desarrollaré...
+
+* Implementación de clases de ECMAScript 6 con sus propiedades y métodos correspondientes.
+
+* Interacción con Inteligencia Artificial para evaluar la resolución.
+
+--------------------------------------------------------
+
+ACTIVIDAD 01
+
+Implementación de clases “Activity” y “Repository”...
+
+1. Vincular el documento “index.html” con el módulo “index.js” de la carpeta “scripts” mediante la etiqueta <script>.
+
+2. Implementar la clase Activity, la cual representará a las actividades que se crearán. Debe tener las propiedades:
+
+	a) id
+	b) title
+	c) description
+	d) imgUrl
+
+3. Implementar la clase Repository, la cual se encargará de crear, almacenar y manipular las actividades. La misma tendrá:
+
+	a) Propiedad activities => Un arreglo para 			almacenar las actividades.
+	b) Método getAllActivities => Debe retornar un 			arreglo con todas las actividades.
+	c) Método createActivity => Debe instanciar una 		actividad con los datos correspondientes 			y almacenarla en su arreglo.
+	d) EXTRA CREDIT. Método deleteActivity => Debe 			recibir un id y filtrar el arreglo para 			eliminar la actividad correspondiente.
+
+--------------------------------------------------------
+
+ACTIVIDAD 02
+
+🤖 Consulta a ChatGPT para evaluar resolución...
+
+1. Interactuar con ChatGTP para hacerle consultas sobre la resolución desarrollada. Se sugiere:
+
+	a) Preguntar a la IA si interpreta correctamente 	qué hace el código.
+	b) Consultar si tiene alguna sugerencia o mejora 	que aportar al código.
+	c) Consultar si cree que hay otra forma de 			realizar la misma implementación.
+
+********************************************************
+
+HOMEWORK 3
+
+Habilidades y competencias que desarrollaré...
+
+* Manipulación del DOM a través de DOM API.
+
+--------------------------------------------------------
+
+ACTIVIDAD 01
+
+Implementar las funciones necesarias para lograr la funcionalidad de la sección “Mis Actividades Favoritas”.
+
+1. Crear una instancia de la clase Repository con la que trabajaremos en toda la actividad.
+
+--------------------------------------------------------
+
+ACTIVIDAD 02
+
+Implementar una función que tomará UNA instancia de Activity y la convertirá en elemento HTML. Esta función nos servirá más adelante. La función deberá:
+
+1. Recibir por parámetro un objeto instancia de Activity.
+
+2. Extraer sus propiedades en variables utilizando destructuring.
+
+3. Crear los elementos HTML que formarán parte de la tarjeta. Ej: <h3> para el título, <p> para la descripción, <img> para la imagen.
+
+4. Asignar los valores a las propiedades correspondientes a cada uno de los elementos. Ej: a la propiedad innerHTML del elemento del título, asignar el valor correspondiente. A la propiedad src del elemento de la imagen, asignar el valor correspondiente.
+
+5. Agregar a los elementos las clases CSS correspondientes que hayas implementado para darles estilos.
+
+6. Crear un elemento <div> que será la tarjeta donde incluiremos todos los demás elementos.
+
+7. “Appendear” al nuevo <div> los elementos creados anteriormente .
+
+8. Asignar al <div> la clase CSS que tengas implementada para darle estilos.
+
+9. Retornar el <div> finalizado con todos los elementos correspondientes dentro.
+
+--------------------------------------------------------
+
+ACTIVIDAD 03
+
+Implementar una función que se encargará de “convertir” TODAS las instancias de Activity en elementos HTML para agregarlos al contenedor correspondiente. La función deberá:
+
+1. Seleccionar el contenedor donde queremos agregar las actividades.
+
+2. Vaciar el contenido actual del contenedor. Se puede hacer manipulando la propiedad innerHTML.
+
+3. Obtener el listado completo de actividades mediante el método correspondiente de una instancia de Repository.
+
+4. “Mapear” el listado de actividades para convertirlos todos en elementos HTML. Para ello utilizar el método “map”, aprovechando como callback la función que hicimos en el punto anterior. Guardar el resultado del mapeo en una nueva variable.
+
+5. “Appendear” todos los elementos HTML del nuevo array dentro del contenedor seleccionado. Para ello puedes utilizar el método forEach.
+
+--------------------------------------------------------
+
+ACTIVIDAD 04
+
+Implementar la función handler que se ejecutará al disparar el evento del botón. La misma deberá:
+
+1. Seleccionar los inputs de title, description e imgUrl.
+
+2. Tomar los valores ingresados en los inputs y guardarlos en variables.
+
+3. Validar que estos valores estén completos. De lo contrario deberá cortar el proceso y mostrar un mensaje avisando al usuario de que hay datos incompletos.
+
+4. Llamar al método correspondiente de la instancia de Repository para crear una nueva actividad.
+
+5. Invocar la función que implementamos en el punto anterior para “refrescar” el contenedor de actividades.
+
+--------------------------------------------------------
+
+ACTIVIDAD 05
+
+1. Seleccionar el botón que disparará el evento de agregar actividad y agregar un Event Listener. El evento, al dispararse, debe ejecutar la función que creamos en el punto anterior.
+
+
+2. EXTRA CREDIT. Implementar la funcionalidad de eliminar tarjetas del contenedor al hacer click sobre ellas o sobre algún nuevo botón que podamos agregar a las mismas. Eres libre de encarar esta funcionalidad de la manera que consideres adecuada. 🤖 Puedes apoyarte en la IA para ayudarte a realizar este punto. 🤖
+
+
+
+
